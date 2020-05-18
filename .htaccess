@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^h5/email/.*$ pages/email.html
+
+RewriteRule ^h5/download/.*$ pages/app-download.html
