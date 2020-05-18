@@ -11,6 +11,7 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const portfinder = require('portfinder')
 const getEntries = require('./getEntries')
+var htmlInjectScripts = require('./html-inject-scripts')
 
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
   baseWebpackConfig.entry[name] = ['./build/dev-client'].concat(baseWebpackConfig.entry[name])
@@ -107,9 +108,9 @@ for (var pathname in pages) {
     // metaTitle: metaSeo.ZH.find_flights_title,
     // metaDesc: metaSeo.ZH.find_flights_desc,
     // metaKeywords: metaSeo.ZH.find_flights_keywords,
-    // scripts: htmlInjectScripts, // 插入脚本
+    scripts: htmlInjectScripts, // 插入脚本
     // cdnpath: utils.cdnPath(),
-    // staticpath: config.dev.assetsSubDirectory,
+    staticpath: config.dev.assetsSubDirectory,
     inject: true,              // js插入位置
     hash: true
   }

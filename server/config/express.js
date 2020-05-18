@@ -42,13 +42,13 @@ module.exports = function() {
 
 
     // 站点视图文件
-    app.set('views', './dist');
+    app.set('views', './dist/pages');
 
     // 视图路由
     require('../routes/h5.server.route.js')(app);
 
     // 静态站点资源目录
-    app.use(express.static('./dist'));
+    app.use(express.static('./dist/static'));
 
     // API
     require('./../services/h5.client.service.js')(app);

@@ -10,6 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var htmlInjectScripts = require('./html-inject-scripts')
 // const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const getEntries = require('./getEntries')
 
@@ -182,9 +183,9 @@ for (var pathname in pages) {
     // metaTitle: metaSeo.ZH.find_flights_title,
     // metaDesc: metaSeo.ZH.find_flights_desc,
     // metaKeywords: metaSeo.ZH.find_flights_keywords,
-    // scripts: htmlInjectScripts,
+    scripts: htmlInjectScripts,
     // cdnpath: utils.cdnPath(),
-    // staticpath: config.build.assetsSubDirectory,
+    staticpath: config.build.assetsSubDirectory,
     minify: { //压缩HTML文件
       removeComments: true, //移除HTML中的注释
       collapseWhitespace: true, //删除空白符与换行符

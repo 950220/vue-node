@@ -1,0 +1,8 @@
+window.apiGatewayHost = 'http://devwww.igola.com/web-gateway'
+window.domain = 'http://devwww.igola.com'
+window.apiGatewayHostOld = 'http://devwww.igola.com'
+window.staticResourceUrl = 'http://devcontent.igola.com/static'
+window.contentCloud = 'http://devcontent.igola.com'
+window.mobileWeb = 'http://devm.igola.com'
+window.__env = 'local'
+window.__appId = 'wx8570e40b50b3d91d'

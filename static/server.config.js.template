@@ -1,0 +1,8 @@
+window.apiGatewayHost = '{{ api_gateway.path_for_web }}'
+window.domain = '{{ pcweb.url }}'
+window.apiGatewayHostOld = '{{ pcweb.url }}'
+window.staticResourceUrl = '{{ static_resources.url }}'
+window.contentCloud = '{{ content_cloud.url }}'
+window.mobileWeb = '{{ mobile_web.url }}'
+window.__env = '{{ env }}'
+window.__appId = '{{ wechat.appid }}'
