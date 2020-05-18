@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteRule ^h5/email/.*$ pages/email.html
+RewriteRule ^h5/home/.*$ pages/home.html
 
-RewriteRule ^h5/download/.*$ pages/app-download.html
+RewriteRule ^h5/index/.*$ pages/index.html
