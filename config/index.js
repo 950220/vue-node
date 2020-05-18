@@ -9,7 +9,7 @@ module.exports = {
     env: require('./dev.env'),
 
     // Paths
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: 'h5-static',
     assetsPublicPath: '/',
     proxyTable: {},
 
@@ -51,7 +51,7 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: 'h5-static',
     assetsPublicPath: '/',
 
     /**
