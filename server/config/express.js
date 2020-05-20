@@ -38,11 +38,11 @@ module.exports = function() {
 
     // 模板引擎中间件,待确定
     app.engine('html', ejs.__express);
-    app.set('view engine', 'html');
 
 
     // 站点视图文件
-    app.set('views', './dist');
+    app.set('views', './dist/pages');
+    app.set('view engine', 'html');
 
     // 视图路由
     require('../routes/h5.server.route.js')(app);
@@ -59,6 +59,7 @@ module.exports = function() {
     // });
 
     app.use(function (err, req, res, next) {
+      console.log(req)
       console.error(err.stack, req.useragent)
       let feedbackMessage = req.useragent;
       res.status(500).send('访问异常 - 请确认你当前访问的地址和设备环境: <br/>'+ feedbackMessage.platform + '，' + feedbackMessage.browser + '，' + feedbackMessage.version + '，' + feedbackMessage.os + '<br/>' +  feedbackMessage.source)

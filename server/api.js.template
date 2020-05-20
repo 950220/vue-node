@@ -1,7 +1,5 @@
 module.exports = {
-
-    API_GATEWAY_B2B_MANAGEMENT : '{{ b2b_management.url }}'
-
+    DATA_SERVICE: 'http://internal.woniubaoxianyiyuan.com'
 };
 
 

@@ -27,7 +27,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       cacheGroups: {
         vendor: {
           name: 'vendor',
-          minChunks: chunks.length
+          minChunks: Infinity
         }
       }
     },

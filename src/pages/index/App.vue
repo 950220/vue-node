@@ -6,8 +6,15 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name: 'App'
+  name: 'App',
+  created () {
+    axios.get('/neo-data-service/diseases/exception')
+      .then((res) => {
+        console.log(res)
+      })
+  }
 }
 </script>
 
