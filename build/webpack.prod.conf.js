@@ -192,6 +192,7 @@ for (var pathname in pages) {
       removeAttributeQuotes: true  //去除属性引用
     }
   };
+  console.log(conf)
   // 需要生成几个html文件，就配置几个HtmlWebpackPlugin对象
   webpackConfig.plugins.push(new HtmlWebpackPlugin(conf));
 }
