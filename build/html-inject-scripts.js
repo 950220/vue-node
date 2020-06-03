@@ -5,7 +5,7 @@ const config = require('../config')
 
 const statciPath = (process.env.NODE_ENV === 'testing' || process.env.NODE_ENV === 'prod' || process.env.NODE_ENV === 'production')
   ? '../' + config.build.assetsSubDirectory + '/'
-  : '../' + config.dev.assetsSubDirectory + '/'
+  : '../../' + config.dev.assetsSubDirectory + '/'
 
 // 工程组件，用于提前编译
 const thirdPartyJS = {

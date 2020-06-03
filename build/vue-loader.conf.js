@@ -5,6 +5,7 @@ const isProduction = process.env.NODE_ENV === 'production'
 const sourceMapEnabled = isProduction
   ? config.build.productionSourceMap
   : config.dev.cssSourceMap
+  console.log('vue-loader')
 
 module.exports = {
   loaders: utils.cssLoaders({
@@ -18,5 +19,17 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
-  }
+  },
+  postcss: [
+    require('autoprefixer')({
+      browsers: ['last 10 versions', 'iOS >= 8', 'Android >= 4.4']
+    }),
+    require('postcss-plugin-px2rem')({
+      rootValue: 75,
+      selectorBlackList: ['html', 'disable-px2rem'],
+      exclude: /(node_module)/,
+      mediaQuery: true,
+      propBlackList: ['border']
+    })
+  ]
 }

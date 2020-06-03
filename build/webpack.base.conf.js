@@ -6,6 +6,8 @@ const vueLoaderConfig = require('./vue-loader.conf')
 const { VueLoaderPlugin } = require('vue-loader')
 const getEntries = require('./getEntries')
 
+console.log(vueLoaderConfig)
+
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }

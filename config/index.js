@@ -23,7 +23,7 @@ module.exports = {
     host: 'localhost',
     port: 8081,
     notifyOnErrors: true,
-    assetsSubDirectory: 'h5-static',
+    assetsSubDirectory: 'static',
     assetsPublicPath: envPublicPathSwitch(),
     proxyTable: {},
     cssSourceMap: false
