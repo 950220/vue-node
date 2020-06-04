@@ -19,7 +19,7 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .content {
   background-image: url('../../../assets/images/test_bg.png');
   background-size: 100% 782px;

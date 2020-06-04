@@ -3,6 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import FastClick from 'fastclick'
+import '../../plugins/rem/rem.js'
+
+// 添加FastClick移除移动端点击延迟
+FastClick.attach(document.body);
 
 Vue.config.productionTip = false
 
