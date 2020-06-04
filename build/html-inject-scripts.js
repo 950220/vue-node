@@ -12,8 +12,7 @@ const thirdPartyJS = {
   // 特殊性脚本
   'staticScripts': [
     'flexible.js',
-    'analysis.js',
-    'server.config.js'
+    'analysis.js'
   ]
 };
 
