@@ -17,6 +17,7 @@
     "amfe-flexible": "^2.2.1",
     "axios": "^0.19.2",
     "fastclick": "^1.0.6",
+    "lib-flexible": "^0.3.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -83,12 +84,6 @@
     "webpack-dev-server": "^3.10.3",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-merge": "^4.1.0"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {},
-      "precss": {}
-    }
   },
   "engines": {
     "node": ">= 6.0.0",
